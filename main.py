@@ -5,7 +5,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 import responses
 
-load_dotenv()
+load_dotenv(override=True)
 API_KEY = os.getenv('TELEGRAM_TOKEN')
 
 if not API_KEY:
